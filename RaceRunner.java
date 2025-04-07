@@ -19,6 +19,7 @@ public class RaceRunner extends Scene {
     int StepSize = -1 * (car.getStepSize());
     drawImage(race.getTrack(), 0, 100, 400);
     drawImage(car.getDecal(), 370, 200, 30);
+    drawText("Practice Lap", 100, 20);
 
     // Play the sound and wait for the race to start
     playSound("RaceStart.wav");
@@ -56,6 +57,8 @@ public class RaceRunner extends Scene {
     drawImage(race.getTrack(), 0, 100, 400);
     drawImage(fastCar.getDecal(), 370, 200, 30);
     drawImage(slowCar.getDecal(), 370, 225, 30);
+    drawText("Final Race", 100, 20);
+    
     // Play the sound and waits for the race to start
     playSound("RaceStart.wav");
     pause(3);
